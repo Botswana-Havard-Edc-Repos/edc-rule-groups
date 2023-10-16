@@ -52,7 +52,7 @@ class SiteRuleGroups(object):
     def update_for_visit_definition(self, visit_instance):
         """Given a visit model instance, run all rules in the rule group
         module for the visit definition in order of the entries (rule source model)."""
-        CrfEntry = apps.get_model('edc_metadata', 'CrfEntry')
+        CrfEntry = django_apps.get_model('edc_metadata', 'CrfEntry')
         for entry in CrfEntry.objects.filter(
                 visit_definition__code=visit_instance.appointment.visit_definition.code).order_by('entry_order'):
             source_model = entry.get_model()
@@ -114,7 +114,8 @@ class SiteRuleGroups(object):
                             raise
                 else:
                     sys.stdout.write(' * registered rule groups from application \'{}\'\n'.format(app))
-            except ImportError as e:
+            except ImportError as e:  # noqa
                 pass
+
 
 site_rule_groups = SiteRuleGroups()

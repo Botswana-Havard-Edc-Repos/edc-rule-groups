@@ -17,5 +17,5 @@ class AppConfig(DjangoAppConfig):
         site_rule_groups.autodiscover()
         if not site_rule_groups.registry:
             sys.stdout.write(style.ERROR(
-                ' Warning. No rule groups have loaded.\n'.format(self.verbose_name)))
+                ' Warning. No rule groups have loaded.\n'.format(self.verbose_name)))  # noqa
         sys.stdout.write(' Done loading {}.\n'.format(self.verbose_name))

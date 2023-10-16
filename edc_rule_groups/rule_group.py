@@ -25,7 +25,7 @@ class BaseMeta:
 class RuleGroupMeta(type):
     """Rule group metaclass."""
 
-    def __new__(cls, name, bases, attrs):
+    def __new__(cls, name, bases, attrs):  # noqa
         """Add the Meta attributes to each rule."""
         try:
             abstract = attrs.get('Meta', False).abstract
