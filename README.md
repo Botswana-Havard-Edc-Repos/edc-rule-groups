@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/Botswana-Havard-Edc-Repos/edc-rule-groups/badge.svg?branch=develop)](https://coveralls.io/github/Botswana-Havard-Edc-Repos/edc-rule-groups?branch=develop)
 # edc-rule-groups
 
 This app is now part of `edc_metadata`.
