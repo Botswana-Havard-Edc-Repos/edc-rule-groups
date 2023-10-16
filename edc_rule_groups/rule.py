@@ -20,7 +20,7 @@ class Rule:
     def __repr__(self):
         return '<{}.rule_groups.{}: {}>'.format(self.app_label, self.group, self.name)
 
-    def run(self, visit):
+    def run(self, visit):  # noqa
         """ Runs the rule for each model in target_models and updates metadata if the model
         instance does not exist."""
         try:

@@ -271,7 +271,6 @@ class RuleGroupTests(TestCase):
         subject_visit = SubjectVisitFactory(appointment=appointment)
         self.assertEqual(CrfMetadata.objects.get(model=CrfTwo._meta.label_lower).entry_status, NOT_REQUIRED)
         self.assertEqual(CrfMetadata.objects.get(model=CrfThree._meta.label_lower).entry_status, NOT_REQUIRED)
-        crf_one = CrfOne.objects.create(subject_visit=subject_visit, f1='bicycle')
         self.assertEqual(CrfMetadata.objects.get(model=CrfTwo._meta.label_lower).entry_status, NOT_REQUIRED)
         self.assertEqual(CrfMetadata.objects.get(model=CrfThree._meta.label_lower).entry_status, REQUIRED)
         subject_visit.save()
