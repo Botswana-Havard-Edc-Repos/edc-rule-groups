@@ -7,12 +7,12 @@ Unipath
 GitPython
 factory-boy
 pytz
+django-crispy-forms
 git+https://github.com/botswana-harvard/edc-appointment@develop#egg=edc-appointment
 git+https://github.com/botswana-harvard/edc-audit@develop#egg=edc-audit
 git+https://github.com/botswana-harvard/edc-base@develop#egg=edc-base
 git+https://github.com/botswana-harvard/edc-configuration@develop#egg=edc-configuration
 git+https://github.com/botswana-harvard/edc-constants@develop#egg=edc-constants
-git+https://github.com/botswana-harvard/edc-crypto-fields@develop#egg=edc-crypto-fields
 git+https://github.com/botswana-harvard/edc-device@develop#egg=edc-device
 git+https://github.com/botswana-harvard/edc-metadata@develop#egg=edc-metadata
 git+https://github.com/botswana-harvard/edc-registration@develop#egg=edc-registration
@@ -20,4 +20,5 @@ git+https://github.com/botswana-harvard/edc-sync@develop#egg=edc-sync
 git+https://github.com/botswana-harvard/edc-visit-schedule@develop#egg=edc-visit-schedule
 git+https://github.com/botswana-harvard/edc-visit-tracking@develop#egg=edc-visit-tracking
 git+https://github.com/botswana-harvard/edc@develop#egg=edc
-git+https://github.com/erikvw/django-revision@develop#egg=django-revision
+git+https://github.com/botswana-harvard/django-revision@develop#egg=django-revision
+git+https://github.com/botswana-harvard/django-crypto-fields@develop#egg=django-crypto-fields
